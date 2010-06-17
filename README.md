@@ -2,6 +2,7 @@ IE6 Upgrade Warning
 ====================
 
 ![Example Screenshot](http://img683.imageshack.us/img683/3734/exampleuk.png)
+
 NOTE: This is based off http://code.google.com/p/ie6-upgrade-warning/. Thanks to him for a great script, I've taken it further so that people can localize the messaging into different languages.
 
 The ie6-upgrade-warning is a little script (7.9kb) that displays a warning message politely informing the user to upgrade the browser to a newer version (links to newest IE, Firefox, Opera, Safari, Chrome are provided).
