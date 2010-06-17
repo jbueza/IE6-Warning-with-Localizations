@@ -8,8 +8,7 @@ The ie6-upgrade-warning is a little script (7.9kb) that displays a warning messa
 
 The webpage is still visible behind a transparent background, but access to it is prevented. The idea is to force users to upgrade from IE6 and avoid the website from a bad reputation that website is not rendering correctly in IE6.
 
-The script is completely translatable in any language, very easy to set-up (one line of code in webpage and one parametter configuration). 
-
+Provides a much more sane way of localization.
 
 Usage 
 -------
