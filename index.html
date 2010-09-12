@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>untitled</title>
+	<title>IE6 Warning Revamp</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Jaime Bueza">
 	<!-- Date: 2010-06-16 -->
@@ -13,24 +13,23 @@
 
 </body>
 <!--[if lte IE 6]>
-  <script src="js/ie6/localization/en_US.js"></script>
-  <script src="js/ie6/warning.js"></script>
+  <script src="localization/en_US.js"></script>
+  <script src="warning.js"></script>
   <script>
     window.onload=function(){
-      (function() {
-        ie6Warning({
+      ie6Warning(function() {
+        var languageMap = {};
+          //specifies a JSON hash table for localization
+        if(window.IE6WarningLocalizations) {
+          languageMap = window.IE6WarningLocalizations;
+        }
+        
+        return {
           imgPath: "./", //specifies the path to the icons of each browser
-          localizations:  function(window) {
-            //do your referencing here.
-            var localizations = {};
-            //specifies a JSON hash table for localization
-            if(window.IE6WarningLocalizations) {
-              localizations = window.IE6WarningLocalizations;
-            }
-            return localizations;
-          }(window) 
-        });
-      })();
-    };</script>
+          localizations:  languageMap
+        };
+      });
+    };
+  </script>
 <![endif]-->
 </html>

@@ -1,9 +1,9 @@
 (function(window, undefined) {
-  var fn = function(configObj) {
-    if(configObj['imgPath'] === undefined) {
-      alert("You must specify the path where the browser icons are.");
+  var fn = function(cb) {
+    var configObj = {};
+    if(typeof(cb) == 'function') {
+      configObj = cb();
     }
-
     //accessor method
     var LOC = function(key) {
       return configObj['localizations'][key];
@@ -24,7 +24,7 @@
     var url4      = LOC('url4');
     var url5      = LOC('url5');
 
-  //  imgPath = str;
+  // oldschool from gcode
   var _body = document.getElementsByTagName('body')[0];
   var _d = document.createElement('div');
   var _l = document.createElement('div');
@@ -198,9 +198,9 @@
   _lit1ds.textAlign = _lit2ds.textAlign = _lit3ds.textAlign = _lit4ds.textAlign = _lit5ds.textAlign = "center";
   };
   
-  
+    
   //safely set it into global namespace.
-  if(window.ie6Warning === undefined) {
+  if(window.ie6Warning === undefined || !ie6Warning) {
     window.ie6Warning = fn;
   }
   
