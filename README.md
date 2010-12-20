@@ -1,5 +1,4 @@
-IE6 Upgrade Warning
-====================
+#IE6 Upgrade Warning
 
 ![Example Screenshot](http://img683.imageshack.us/img683/3734/exampleuk.png)
 
@@ -11,13 +10,15 @@ The webpage is still visible behind a transparent background, but access to it i
 
 Provides a much more sane way of localization.
 
-Usage 
--------
+## Usage 
 
 Look at the index.html file for example. This is a work in progress, as I'm refactoring someone else's code.
 
-Changelog
-----
+## Changelog
 
 * Fixed JS Lint errors
 * Parameterized configObj so that you can set an imgPath as well as localizations lookup object
+
+##Contributers
+
+renatocarvalho
