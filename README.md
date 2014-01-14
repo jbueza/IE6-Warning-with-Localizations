@@ -28,6 +28,7 @@ Look at the index.html file for example. This is a work in progress, as I'm refa
 The MIT License (MIT)
 
 Copyright (c) 2013 Mihai Ile
+
 Copyright (c) 2013 Jaime Bueza
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
