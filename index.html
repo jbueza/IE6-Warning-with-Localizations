@@ -13,6 +13,7 @@
 
 </body>
 <!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="css/ie-warning.css"/>
   <script src="localization/en_US.js"></script>
   <script src="warning.js"></script>
   <script>
@@ -23,7 +24,7 @@
         if(window.IE6WarningLocalizations) {
           languageMap = window.IE6WarningLocalizations;
         }
-        
+
         return {
           imgPath: "./", //specifies the path to the icons of each browser
           localizations:  languageMap

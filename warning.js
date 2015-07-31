@@ -152,6 +152,53 @@
    _li3d.onclick = function() {window.location = url3; };
    _li4d.onclick = function() {window.location = url4; };
    _li5d.onclick = function() {window.location = url5; };
+
+   var addEvent = window.addEventListener ? function (elem, type, method) {
+        elem.addEventListener(type, method, false);
+    } : function (elem, type, method) {
+        elem.attachEvent('on' + type, method);
+    };
+
+    addEvent(_li1d,'mouseover',function(){
+      _li1d.style.background = "url('"+imgPath+"background_browser_hover.gif') no-repeat scroll left top"
+    });
+
+    addEvent(_li1d,'mouseout',function(){
+      _li1d.style.background = "transparent url('"+imgPath+"background_browser.gif') no-repeat scroll left top";
+    });
+
+     addEvent(_li2d,'mouseover',function(){
+       _li2d.style.background = "url('"+imgPath+"background_browser_hover.gif') no-repeat scroll left top"
+     });
+
+     addEvent(_li2d,'mouseout',function(){
+       _li2d.style.background = "transparent url('"+imgPath+"background_browser.gif') no-repeat scroll left top";
+     });
+
+     addEvent(_li3d,'mouseover',function(){
+       _li3d.style.background = "url('"+imgPath+"background_browser_hover.gif') no-repeat scroll left top"
+     });
+
+     addEvent(_li3d,'mouseout',function(){
+       _li3d.style.background = "url('"+imgPath+"background_browser.gif') no-repeat scroll left top"
+     });
+
+     addEvent(_li4d,'mouseover',function(){
+       _li4d.style.background = "url('"+imgPath+"background_browser_hover.gif') no-repeat scroll left top"
+     });
+
+     addEvent(_li4d,'mouseout',function(){
+       _li4d.style.background = "url('"+imgPath+"background_browser.gif') no-repeat scroll left top"
+     });
+
+     addEvent(_li5d,'mouseover',function(){
+       _li5d.style.background = "url('"+imgPath+"background_browser_hover.gif') no-repeat scroll left top"
+     });
+
+     addEvent(_li5d,'mouseout',function(){
+       _li5d.style.background = "url('"+imgPath+"background_browser.gif') no-repeat scroll left top"
+     });
+
    _li1ds.styleFloat = _li2ds.styleFloat = _li3ds.styleFloat = _li4ds.styleFloat = _li5ds.styleFloat = "left";
   _li1ds.width = _li2ds.width = _li3ds.width = _li4ds.width = _li5ds.width = "120px";
   _li1ds.height = _li2ds.height = _li3ds.height = _li4ds.height = _li5ds.height = "122px";
@@ -197,12 +244,12 @@
   _lit1ds.width = _lit2ds.width = _lit3ds.width = _lit4ds.width = _lit5ds.width = "118px";
   _lit1ds.textAlign = _lit2ds.textAlign = _lit3ds.textAlign = _lit4ds.textAlign = _lit5ds.textAlign = "center";
   };
-  
-    
+
+
   //safely set it into global namespace.
   if(window.ie6Warning === undefined || !ie6Warning) {
     window.ie6Warning = fn;
   }
-  
-  
+
+
 })(window);
