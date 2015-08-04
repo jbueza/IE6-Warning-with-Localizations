@@ -1,0 +1,20 @@
+div#_d {
+  margin: 47px 0;
+  border: 1px solid #777 !important;
+  box-shadow: 0 0 8px #888;
+  background: #FFF4F4 !important;
+  width: 710px !important;
+  height: inherit !important;
+  min-height: 265px;
+}
+
+ul#_ul li {
+  float: left;
+}
+
+h1#_h {
+  text-align: center;
+  margin: 13px 25px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 1.5em !important;
+}
